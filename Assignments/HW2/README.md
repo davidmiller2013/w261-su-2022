@@ -3,31 +3,30 @@
 In our second assignment we'll dive deeper into the Map Reduce paradigm and introduce a new framework for parallel computation: Hadoop MapReduce. This assignment has historically been one of the most challenging for students because of the learning curve associated with this techonology and the programming paradigm. This semester we used the live sessions to give you a structured introduction to the framework and Hadoop syntax before you go on to use it to perform NaiveBayes. If you have not yet completed the `wk2Demo` and  `wk3Demo`notebooks you should do that now before the homework. We strongly encourage you to start early and to support each other on Slack.
 
 ### How to submit your work:
-#### Step 1 of 2.
 
-Submit your work by pushing your completed notebook and supplemental files to your assigned student repository on Git. The file structure should look like this:
+To complete the Homework 2 assignment you will need to submit your responses on the Canvas assignment form located [here](https://canvas.instructure.com/courses/4745907/assignments) for HW2.
 
-```
-S18-1-<user>
-    --Assignments
-        --HW1
-        --HW2
-           |__hw2_workbook.ipynb
-           |__README.md
-           |__data
-           |__EnronEDA
-           |__NaiveBayes
-        --HW3
-           |__ etc ...
-     --HelpfulResources
-     etc..
-```
-#### Step 2 of 2.
-Please submit the link to your notebook (not just the directory, the actual notebook) using the following form:
--  https://docs.google.com/forms/d/1kwp--WoxSm96xQ7OAjZl8PTeHW-C-yrb8kg6jdn1UwQ
+We strongly recommend completing and saving all responses in the Homework  notebook first, before attempting to submit the assignment responses in Canvas, because:
+
+All responses in Canvas must be submitted at once (i.e. on Canvas you can't save a half-completed assignment and come back later).
+For full marks you will be required to upload an HTML and .ipynb version of your notebooks on the Canvas form, so it will need to be completed before submission.
+
+Tips:
+Make use of your peers and TAs by asking questions on Slack. Everyone comes to MIDs from a different background so don't be shy; all questions are welcome!
+
 
 ### Tips:
 
+For HW2 and lab2, the [Total Order Sort notebook](https://github.com/UCB-w261/main/blob/main/HelpfulResources/TotalSortGuide/total-sort-guide-hadoop-streaming.ipynb ) is great. We recommendad the following workflow:
+  * Section Hadoop Shuffle review
+  *  Total order sort (https://github.com/UCB-w261/main/blob/main/HelpfulResources/TotalSortGuide/total-sort-guide-hadoop-streaming.ipynb)
+  *  II.C.1. Hadoop Streaming Implementation - single reducer    (APP: top 10 most frequent words) Total order sort
+  * II.C.2. Hadoop Streaming Implementation - multiple reducers (APP: top 10 most frequent words) Partial order sort
+  *  II.C.3 Hadoop Streaming Implementation - multiple reducers with ordered partitions
+  *  Section 3: Order inversion pattern with one reducer
+ *  Section 5: Order inversion pattern with multiple reducers (optional)
+
+In addition, and in a general,
 * Do the readings! Many of the tasks and conceptual questions in this assignment are directly explained in the texts (se notes in the workbooks).
 * If you are struggling with Hadoop, take a moment to read our [Debugging Tips](https://github.com/UCB-w261/main/blob/master/Resources/debugging.md).
 * As always we ask that students don't share code because we want your submissions to accurately reflect your own coding style and understanding. However you will likely find it very tempting to share code for debugging purposes. *Help each other debug without sharing code*. Here's the right way to ask for help from your peers or TAs:
